@@ -1,142 +1,99 @@
-import "./Footer.css"
+import React from "react";
+// import {
+//   AiOutlineInstagram,
+//   AiOutlineFacebook,
+//   AiOutlineTwitter,
+//   AiOutlineMail,
+// } from "react-icons/ai";
+import "./Footer.scss";
 
-export default function Footer() {
-  
+function Footer() {
   return (
-    <div style={{backgroundColor : "#539165"}}>
- 
-  <footer
-          class="text-center text-lg-start text-white"
-          >
-    
-    <div class="container p-4 pb-0">
-      
-      <section class="">
-        
-        <div class="row">
-          
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">
-              Jamshion
-            </h6>
-            <p>
-              Your one stop shop for all your shopping needs. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
-            </p>
-          </div>
-          
-
-          <hr class="w-100 clearfix d-md-none" />
-
-          
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-            <p>
-              <a class="text-white">Men wear</a>
-            </p>
-            <p>
-              <a class="text-white">Dresses</a>
-            </p>
-            <p>
-              <a class="text-white">Kids Section</a>
-            </p>
-            <p>
-              <a class="text-white">Accessories</a>
-            </p>
-          </div>
-          
-
-          <hr class="w-100 clearfix d-md-none" />
-
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">
-              Useful links
-            </h6>
-            <p>
-              <a class="text-white">Your Account</a>
-            </p>
-            <p>
-              <a class="text-white">Become an Affiliate</a>
-            </p>
-            <p>
-              <a class="text-white">Shipping Rates</a>
-            </p>
-            <p>
-              <a class="text-white">Help</a>
-            </p>
+    <footer className="Footer">
+      <div className="stripline"></div>
+      <div className="container footer-container">
+        <div className="footer-content">
+          <div className="footer-subcontent">
+            <h4 className="title">INFO</h4>
+            <ul className="sub-links">
+              <li className="hover-link">Our Company</li>
+              <li className="hover-link">Blog</li>
+              <li className="hover-link">Contact</li>
+              <li className="hover-link">Jamshion Social</li>
+            </ul>
           </div>
 
-          
-          <hr class="w-100 clearfix d-md-none" />
-
-          
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p><i class="fas fa-home mr-3"></i> New Delhi , India</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 91 964 567 8867</p>
-            <p><i class="fas fa-print mr-3"></i> + 91 674 567 8929</p>
+          <div className="footer-subcontent">
+            <h4 className="title">HELP</h4>
+            <ul className="sub-links">
+              <li className="hover-link">Terms and Conditions</li>
+              <li className="hover-link">Shipping & Returns</li>
+              <li className="hover-link">Privacy Policy</li>
+              <li className="hover-link">Copyright</li>
+            </ul>
           </div>
-          
-        </div>
-        
-      </section>
-      
 
-      <hr class="my-3"/>
+          <div className="footer-subcontent">
+            <h4 className="title">SHOP</h4>
+            <ul className="sub-links">
+              <li className="hover-link">My Account</li>
+              <li className="hover-link">Orders</li>
+              <li className="hover-link">FAQ's</li>
+              <li className="hover-link">My Wishlist</li>
+            </ul>
+          </div>
 
-      
-      <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-          
-          <div class="col-md-7 col-lg-8 text-center text-md-start">
-            
-            <div class="p-3">
-              © 2023 Jamshion
-              {/* <a class="text-white" href="https://mdbootstrap.com/"
-                 > </a> */}
+          <div className="follow-info">
+            <div className="follow-info-content">
+              <div className="follow-us">
+                <h4>FOLLOW US</h4>
+                <ul className="follow">
+                  <img src="./assets/instagram.png" alt="logo" />
+                  <img src="./assets/facebook.png" alt="logo" />
+                  <img src="./assets/twitter.png" alt="logo" />
+                  <img src="./assets/linkedin.png" alt="logo" />
+                  {/* <li classname="hover-link">
+                    <AiOutlineInstagram />
+                  </li>
+                  <li classname="hover-link">
+                    <AiOutlineFacebook />
+                  </li>
+                  <li classname="hover-link">
+                    <AiOutlineTwitter />
+                  </li>
+                  <li classname="hover-link">
+                    <AiOutlineMail />
+                  </li> */}
+                </ul>
+              </div>
+              <div className="email">
+                <img src="./assets/gmail.png" alt="logo" />
+                <p>jamshion.india@gmail.com</p>
+              </div>
+              <div className="city" style={{ marginTop: "10px" }}>
+                <img src="./assets/placeholder.png" alt="logo" />
+                <p>Delhi, India</p>
+              </div>
             </div>
-            
           </div>
-          
-
-          
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-            
-            <a
-               class="btn btn-outline-light btn-floating m-1 text-white"
-               
-               role="button"
-               ><i class="fab fa-facebook-f"></i></a>
-
-            
-            <a
-               class="btn btn-outline-light btn-floating m-1 text-white"
-               
-               role="button"
-               ><i class="fab fa-twitter"></i></a>
-
-            
-            <a
-               class="btn btn-outline-light btn-floating m-1 text-white"
-               role="button"
-               ><i class="fab fa-google"></i></a>
-
-            
-            <a
-               class="btn btn-outline-light btn-floating m-1 text-white"
-               role="button"
-               ><i class="fab fa-instagram"></i></a>
-          </div>
-          
         </div>
-      </section>
-      
-    </div>
-    
-  </footer>
-  
-</div>
 
+        <div className="subfooter-container">
+          <img src="./assets/sales.png" alt="announcement" />
+          <div className="subfooter">
+            <p>
+              Crafted with <img src="./assets/heart.png" alt="heart-image" /> in
+              New Delhi
+            </p>
+            <p style={{ fontStyle: "normal", marginTop: "10px" }}>
+              ©️ 2023 | Jamshion India. All Rights Reserved.
+            </p>
+          </div>
+          <img src="./assets/messenger.png" alt="messenger" />
+        </div>
+      </div>
+    </footer>
   );
 }
+
+export default Footer;
