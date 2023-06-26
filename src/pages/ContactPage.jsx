@@ -1,15 +1,21 @@
 import React from "react";
 import { Footer, Navbar } from "../components";
 import "./ContactPage.css"
+import {Row,Col,Container} from "react-bootstrap"
 const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <div className="container my-3 py-3">
+      <Container>
+      
+        <Row>
+        <div className="container ">
         <h1 className="text-center">Get in touch</h1>
         <hr />
-        <div class="row my-4 h-100">
-          <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">
+        </div>
+          <Col xs={12} md={6} lg={6}>
+          <div class="row my-4 h-100">
+          <div style={{padddingTop: "5%"}}>
             <form>
               <div class="form my-3">
                 <label for="Name">Name</label>
@@ -50,7 +56,20 @@ const ContactPage = () => {
             </form>
           </div>
         </div>
-      </div>
+          </Col>
+          <Col xs={12} md={6} lg={6}>
+            <img
+            className="card-img img-fluid"
+            src="./assets/envelope.jpg"
+            alt="Envelope"
+            height={300}
+            style={{padding: "5%"}}
+
+          />
+          </Col>
+        </Row>
+      </Container>
+      
       <Footer />
     </>
   );
