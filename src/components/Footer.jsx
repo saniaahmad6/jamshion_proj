@@ -10,7 +10,35 @@ import "./Footer.scss";
 function Footer() {
   return (
     <footer className="Footer">
-      <div className="stripline"></div>
+      <div className="stripline">
+        <div className="container stripline-container">
+
+          <div className="stripline-left">
+            <img src="./assets/jamshion-white-logo.png" alt="logo" />
+          </div>
+
+          <div className="stripline-right">
+            <div className="stripline-right-content">
+              <img src="./assets/truck.png" alt="truck" />
+              <p>FREE and FAST shipping PAN India on orders above 299.</p>
+              
+            </div>
+
+            <div className="stripline-right-content">
+              <img src="./assets/headphone.png" alt="headphone" />
+              <p>We are available 24/7 to help you unlock elegance.</p>
+            </div>
+
+            <div className="stripline-right-content">
+              <img src="./assets/suport.png" alt="support" />
+              <p>
+                Rest Assured. We handle all your transactions with utmost care.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
       <div className="container footer-container">
         <div className="footer-content">
           <div className="footer-subcontent">

@@ -3,6 +3,7 @@ import { Carousel } from "react-bootstrap";
 import Points from "../components/Points";
 import FAQ from "./Faq";
 import TopProd from "../components/topprod";
+import EmailSection from "../components/EmailSection";
 function Home() {
   
   return (
@@ -93,6 +94,7 @@ function Home() {
       {/* <FAQ/> */}
       <Points/>
       <TopProd/>
+      <EmailSection />
       <Footer />
     </>
   )

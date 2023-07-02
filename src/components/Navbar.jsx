@@ -1,44 +1,88 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import  "./Navbar.css"
+import React from "react";
+import "./Navbar.scss";
+import NavbarMarquee from "./NavbarMarquee";
 
-const Navbar = () => {
-    const state = useSelector(state => state.handleCart)
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light  py-3 sticky-top " >
-            <div className="container">
-                <NavLink className="navbar-brand fw-bolder fs-4 px-2" to="/" style ={{color :"#3D550C"}}> <img src="https://pbs.twimg.com/profile_images/1662277696708317184/WM3BqYkj_400x400.jpg" height="50px" style={{borderRadius :"100%"}}></img> Jamshion</NavLink>
-                <button className="navbar-toggler mx-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+function Navbar() {
+  return (
+    <div className="Navbar">
+      <NavbarMarquee />
+      <div className="top-nav">
+        <div className="container top-nav-container">
+          <ul className="nav-link-group">
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Reviews</li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+            <li> Jamshion Social</li>
+          </ul>
+
+          <ul className="follow">
+            <li>
+              <img src="./assets/instagram2.png" alt="logo" />
+            </li>
+            <li>
+              <img src="./assets/facebook2.png" alt="logo" />
+            </li>
+            <li>
+              {" "}
+              <img src="./assets/twitter2.png" alt="logo" />
+            </li>
+            <li>
+              <img src="./assets/linkedin2.png" alt="logo" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="middle-nav">
+        <div className="container middle-nav-container">
+          <div className="search-bar">
+            <form>
+              <div className="inner-search-content">
+                <input
+                  type="search"
+                  id="search"
+                  name="search"
+                  placeholder="What are you loking for?"
+                />
+                <button type="submit" className="search-button">
+                  <img src="./assets/search3.png" alt="search" />
                 </button>
+              </div>
+            </form>
+          </div>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav m-auto my-2 text-center " >
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/">HOME </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/product">PRODUCTS</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/about">ABOUT</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/contact">CONTACT</NavLink>
-                        </li>
-                    </ul>
-                    <div className="buttons text-center">
-                        <NavLink to="/login" className="btn btn-outline-dark m-2" ><i className="fa fa-sign-in-alt mr-1"></i> Login</NavLink>
-                        <NavLink to="/register" className="btn btn-outline-dark m-2"><i className="fa fa-user-plus mr-1"></i> Sign up</NavLink>
-                        <NavLink to="/cart" className="btn btn-outline-dark m-2"><i className="fa fa-cart-shopping mr-1"></i> Cart ({state.length}) </NavLink>
-                    </div>
-                </div>
-
-
+          <div className="jamshion-logo">
+            <img src="./assets/jamshion-logo.png" alt="logo" />
+            <div className="jamshion-logo-text">
+              <h1>JAMSHION</h1>
+              <p>unlock the elegance within</p>
             </div>
-        </nav>
-    )
+          </div>
+
+          <div className="middle-nav-right">
+            <img src="./assets/before-login.png" alt="account" />
+            <img src="./assets/cart.png" alt="cart" />
+            <img src="./assets/wishlist.png" alt="wishlist" />
+          </div>
+        </div>
+      </div>
+
+      <div className="bottom-nav">
+        <div className="container bottom-nav-container">
+          <ul className="bottom-nav-link">
+            <li>Bestsellers</li>
+            <li>Modest Collection</li>
+            <li>Hijabs</li>
+            <li>Accessories</li>
+            <li>Islamic Gifts</li>
+            <li>Explore</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
