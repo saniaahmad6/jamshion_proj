@@ -1,126 +1,117 @@
 import React from 'react'
 import { Footer, Navbar } from "../components";
+import {Row,Col,Container} from "react-bootstrap"
 const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <div className="container my-3 py-3">
-        <h1 className="text-center">About Us</h1>
+      <div className="container my-3 py-3" >
+        <div style={{backgroundColor : "white"}}>
+        <img
+              className="card-img img-fluid"
+              src="./assets/WhatsApp Image 2023-07-03 at 11.53.57 AM.jpeg"
+              alt="quote"
+              height={200}
+              style={{padding: "0",}}
+
+            />
         <hr />
-        <p className="lead text-center" style={{padding: "3% 15% 0",margin : "0 0 2%", textAlign: "justify", textJustify: "inter-word"}}>
-        Unicus Mobility is a startup venture that intends to improve people's access to efficient, eco-friendly, and technologically advanced mobility solutions.
-        <br/> 
+        </div>
+        <Container>
+          <Row >
+            <Col xs={12} md={4} lg={4} style={{textAlign :"center"}}>
+            <img
+
+              src="./assets/jamshion-logo.png"
+              height={350}
+              style={{padding: "0",}}
+
+            />
+            </Col>
+            <Col xs={12} md={8} lg={8}>
+            <p style={{ textAlign: "justify", padding: "7% 0 15% 0", fontSize : "1.2rem",textJustify: "inter-word", lineHeight: "2rem", fontColor: "#4E4F50"}}>
+
+Jamshion is an Indian modest fashion brand that celebrates the fusion of tradition and fashion, unlocking the elegance within individuals. We are committed to empowering individuals to express their unique style while embracing their cultural heritage and modesty requirements. With a focus on providing fashionable and culturally rich clothing options, we strive to cater to the needs of modest dressers in India and beyond.
+
+We are considerably a young company located in Delhi, the capital city of India, a magnificent country with a rich cultural heritage and a long tradition of modest fashion. We are a small, young and dynamic team under the management of Ms. Sana, a Muslim women entrepreneur.
 
 
+</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col Col xz={12} md={8} lg={8}>
+            <h3 style = {{margin : "0 0"}}>Modest Fashion</h3>
+            <p style={{ textAlign: "justify", padding: "3% 0 15% 0", fontSize : "1.2rem",textJustify: "inter-word", lineHeight: "2rem", fontColor: "#4E4F50"}}>
 
+            Clothes that hide rather than flaunt the body are becoming increasingly popular worldwide. Modest clothing is witnessing popularity as more and more women try out wearing clothes that aren't as exposing.
 
-        <section style = {{padding : "5% 0% 5%"}}>
-                    {/* <h3 style = {{margin : "0 0 2%"}}>Our !</h3> */}
-                    
+Clothing with minimal or no skin exposure is known as <strong>modest fashion</strong>. Customers can express their own sense of style while also satisfying their personal interests and cultural beliefs. Many people, especially those who wish to be discreet in public, gravitate towards more modest styles of clothing. They're comfortable, timeless, and always on-trend, making them a closet staple. Modest clothing is not just popular among Muslims, contrary to common belief. It has a long history, spanning numerous civilizations and centuries.
 
-                    
-                        <h5 style={{margin : "0 0 2%"}}>Our Mission </h5>
-                        <p style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.7rem"}}>
+</p>
+            </Col>
+            <Col xz={12} md={4} lg={4} style={{textAlign : "center"}}>
+            <img
+            // className="card-img img-fluid"
+            src="https://i.pinimg.com/736x/a6/d9/fd/a6d9fd670dbba29b910837d26645aef8.jpg"
+            alt="Card"
+            height={400}
+            
+          />
+            </Col>
+          
+          </Row>
+        </Container>
 
-                        We are on a mission to revolutionise the world of transportation with cutting-edge electric vehicles that blend brains, 
-                        brawn, and sustainability. Inspired by the sight of frantic delivery fleets zipping through gridlocked streets on fossil-fueled bikes, 
-                        we knew there had to be a better way. Further, we observed the hassles involved in the daily commute that are faced by students and urban professionals.
-                        And so, we set out to manufacture e-bikes that would not only ease the daily commute for all of them but would also be kind to the environment and their wallets.
+        
+        
 
-                        </p>
-                        
-                        
-                        <h5 style={{margin : "0 0 2%"}}> Journey </h5>
-                        <p style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.7rem"}}>
-                        Starting with a college project, we built an electric street
-                         bike with a 3000W hub motor and 72V battery pack, 
-                         allowing us to reach a top speed of 80 kmph. 
-                         But we did not stop there. For months, we ideated and 
-                         convened numerous brainstorming sessions to come up with a plan
-                          to break into the micro-mobility segment. Our e-bikes are not your 
-                          run-of-the-mill, dime-a-dozen electric bikes. They are lean, 
-                          mean, eco-friendly machines that boast not only a sleek, space-saving design but also a rugged
-                           build to handle difficult Indian roads. Plus, we have loaded them 
-                           up with the latest and greatest technology to give riders a truly intelligent, 
-                           hassle-free ride. And the best part? Our e-bikes will not
-                            break the bank, so anyone can 
-                            join the sustainable mobility revolution.
-
-                        </p>
-                        
-
-                        
-                        <h5 style = {{margin : "0 0 2%"}}>Our team </h5>
-                        <p style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.7rem"}}>
-                        The founding team has creative thinkers and innovators who are ardent believers that 
-                        ideas without execution are just hallucinations. What truly distinguishes 
-                        the sheeps from goats is the way in which they put their ideas into action. 
-                        The enthusiastic engineers, designers, marketers, and operators that make up our team know 
-                        everything there is to know about the EV business. It is our mission to provide our customers with smart mobility options 
-                        that are tailored to their ever-changing requirements. Our seasoned advisors and mentors have equipped 
-                        us to face the challenges of the business world and propel our startup forward.
-
-                        At Unicus Mobility, we differentiate ourselves 
-                        through our cutting-edge technology, 
-                        
-                        top-notch functionality, and sleek aesthetic. 
-                        Our electric bikes are meticulously crafted 
-                        to ensure a fun and satisfying ride every time. 
-                        Our bikes are designed with urban commuters in mind, 
-                        featuring amenities like long battery life,
-                         fast charging, and cutting-edge connection. 
-                         Our top priority is keeping our riders safe, 
-                         so we've built-in state-of-the-art features 
-                         like LED lighting, anti-theft devices, and anti-lock brakes.
-
-                        </p>
-                        
-                        
-
-                        
-                    
-                
-
-            </section>
-
-        </p>
-
-        <h2 className="text-center py-4">Our Products</h2>
+        <h2 className="py-4">Products</h2>
         <div className="row">
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://www.modestforever.com/pub/media/catalog/product/cache/660135ff7ae1e337e4b3d8f2447bf0df/P/2/P235-1.jpg" alt="" height={160} />
               <div className="card-body">
-                <h5 className="card-title text-center">Classics</h5>
+                <h5 className="card-title text-center">Hijabs</h5>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/5807580/pexels-photo-5807580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://cdn.shopify.com/s/files/1/0075/9250/9551/files/7_71145fd6-bb85-4ad6-8264-1158325a7684.jpg?v=1683367407" alt="" height={100} />
               <div className="card-body">
-                <h5 className="card-title text-center">Pocket-friendly</h5>
+                <h5 className="card-title text-center">Abaya</h5>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/5807631/pexels-photo-5807631.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://images-cdn.ubuy.co.in/633fec7f992c8d65027cbdbc-muslim-prayer-rug-and-prayer-beads-with.jpg" alt="" height={160} />
               <div className="card-body">
-                <h5 className="card-title text-center">High Speed</h5>
+                <h5 className="card-title text-center">Islamic Gifts</h5>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/5807576/pexels-photo-5807576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://i.pinimg.com/originals/b8/3a/d3/b83ad3986ad446e345a060549ff713a0.jpg" alt="" height={160} />
               <div className="card-body">
-                <h5 className="card-title text-center">Latest models</h5>
+                <h5 className="card-title text-center">Accessories</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Container>
+      <h2 className="text-center py-4">Easy Service</h2>
+        <img
+            className="card-img img-fluid"
+            src="./assets/services.png"
+            alt="Card"
+            height={400}
+            
+          />
+        </Container>
       <Footer />
     </>
   )

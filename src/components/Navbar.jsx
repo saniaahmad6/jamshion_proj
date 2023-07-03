@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 import NavbarMarquee from "./NavbarMarquee";
-
+import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <div className="Navbar">
@@ -9,11 +9,11 @@ function Navbar() {
       <div className="top-nav">
         <div className="container top-nav-container">
           <ul className="nav-link-group">
-            <li>About Us</li>
+            <li><NavLink to="/about">About</NavLink></li>
             <li>Blog</li>
             <li>Reviews</li>
             <li>FAQs</li>
-            <li>Contact Us</li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
             <li> Jamshion Social</li>
           </ul>
 

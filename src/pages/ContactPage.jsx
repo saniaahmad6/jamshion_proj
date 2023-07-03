@@ -10,7 +10,7 @@ const ContactPage = () => {
       
         <Row>
         <div className="container ">
-        <h1 className="text-center">Get in touch</h1>
+        
         <hr />
         </div>
           <Col xs={12} md={6} lg={6}>
@@ -62,8 +62,8 @@ const ContactPage = () => {
             className="card-img img-fluid"
             src="./assets/envelope.jpg"
             alt="Envelope"
-            height={300}
-            style={{padding: "5%"}}
+            height={200}
+            style={{padding: "0 10% 10%",}}
 
           />
           </Col>
