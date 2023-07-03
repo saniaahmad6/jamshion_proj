@@ -12,7 +12,7 @@ import {
   PageNotFound,
 } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Sidebar from "./pages/SideBar";
 function App() {
   return (
     <Routes>
@@ -22,7 +22,7 @@ function App() {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/cart" element={<Cart />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<Sidebar />} />
       <Route path="/register" element={<Register />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="*" element={<PageNotFound />} />

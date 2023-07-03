@@ -134,6 +134,33 @@
             font-size: 1.12rem;
             font-family: "Calibri", sans-serif;
           }
+          .p1.center{
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: bold;
+            color: #6b9c73;
+            line-height: normal;
+            padding-bottom: 5px;
+            padding-top: 3%;
+            font-size: 1.12rem;
+            text-align: center;
+            font-style: italic;
+          }
+          .p1.center .small{
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: bold;
+            color: #6b9c73;
+            
+            padding-top: 3%;
+            font-size: 1rem;
+            text-align: center;
+            font-style: italic;
+          }
+          .h1.center{
+            padding-top: 5%;
+            text-align: center;
+            text-decoration: dotted;
+            
+          }
         }
       }
 

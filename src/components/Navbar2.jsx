@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import NavbarMarquee from "./NavbarMarquee";
 import { NavLink } from "react-router-dom";
-function Navbar() {
+function Navbar2() {
   return (
     <div className="Navbar">
       <NavbarMarquee />
@@ -54,10 +54,11 @@ function Navbar() {
           </div>
 
           <div className="jamshion-logo">
-            <NavLink to="/"><img src="./assets/jamshion-logo.png" alt="logo" /></NavLink>
+            
             <div className="jamshion-logo-text">
-              <h1>JAMSHION</h1>
-              <p>unlock the elegance within</p>
+            <NavLink to="/" style={{textDecoration :"none"}}><h1 className="h1 center">JAMSHION</h1></NavLink>
+              {/* <p>unlock the elegance within</p> */}
+              <p className="p1 center">"Islam is beautified by two qualities: modesty and tolerance for the <br/> sake of Allah and not for anyone else" <br/><p className="small"> Source: al-Tahmid li-Ibn 'Abd al-Barr 13/218</p></p>
             </div>
           </div>
 
@@ -71,20 +72,9 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="bottom-nav">
-        <div className="container bottom-nav-container">
-          <ul className="bottom-nav-link">
-            <li>Bestsellers</li>
-            <li>Modest Collection</li>
-            <li>Hijabs</li>
-            <li>Accessories</li>
-            <li>Islamic Gifts</li>
-            <li>Explore</li>
-          </ul>
-        </div>
-      </div>
+      
     </div>
   );
 }
 
-export default Navbar;
+export default Navbar2;

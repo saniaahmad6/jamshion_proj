@@ -1,22 +1,16 @@
 import React from 'react'
-import { Footer, Navbar } from "../components";
+import { Footer } from "../components";
 import {Row,Col,Container} from "react-bootstrap"
+import Navbar2 from '../components/Navbar2';
+
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar2 />
       <div className="container my-3 py-3" >
-        <div style={{backgroundColor : "white"}}>
-        <img
-              className="card-img img-fluid"
-              src="./assets/WhatsApp Image 2023-07-03 at 11.53.57 AM.jpeg"
-              alt="quote"
-              height={200}
-              style={{padding: "0",}}
-
-            />
-        <hr />
-        </div>
+        
+        
+        
         <Container>
           <Row >
             <Col xs={12} md={4} lg={4} style={{textAlign :"center"}}>
