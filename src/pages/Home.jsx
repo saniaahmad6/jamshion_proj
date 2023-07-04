@@ -4,6 +4,7 @@ import Points from "../components/Points";
 import FAQ from "./Faq";
 import TopProd from "../components/topprod";
 import EmailSection from "../components/EmailSection";
+import GridSection from "../components/GridSection";
 function Home() {
   
   return (
@@ -94,6 +95,7 @@ function Home() {
       {/* <FAQ/> */}
       <Points/>
       <TopProd/>
+      <GridSection />
       <EmailSection />
       <Footer />
     </>

@@ -1,0 +1,46 @@
+.GridSection {
+  h1,
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  color: white;
+  background-color: #6b9c73;
+  padding-block: 30px;
+  padding-bottom: 50px;
+  .grid-container-section {
+    .grid-heading {
+      background-color: #6b9c73;
+      text-align: center;
+      h1 {
+        font-weight: lighter;
+        font-size: 3rem;
+      }
+    }
+
+    .grid {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background-color: white;
+
+      .child {
+        padding-block: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #6b9c73;
+        h1 {
+          font-weight: 400;
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}

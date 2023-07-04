@@ -12,7 +12,6 @@ function Footer() {
     <footer className="Footer">
       <div className="stripline">
         <div className="container stripline-container">
-
           <div className="stripline-left">
             <img src="./assets/jamshion-white-logo.png" alt="logo" />
           </div>
@@ -21,7 +20,6 @@ function Footer() {
             <div className="stripline-right-content">
               <img src="./assets/truck.png" alt="truck" />
               <p>FREE and FAST shipping PAN India on orders above 299.</p>
-              
             </div>
 
             <div className="stripline-right-content">
@@ -36,7 +34,6 @@ function Footer() {
               </p>
             </div>
           </div>
-
         </div>
       </div>
       <div className="container footer-container">
@@ -67,7 +64,10 @@ function Footer() {
               <li className="hover-link">My Account</li>
               <li className="hover-link">Orders</li>
               <li className="hover-link">FAQ's</li>
-              <li className="hover-link">My Wishlist</li>
+              <li className="hover-link" style={{display:"flex", gap:"5px", alignItems:"center"}}>
+                <img src="./assets/wishlist.png" alt="wishlist" height="20px" width="20px" />
+                <p style={{margin:"0"}}>My Wishlist</p>
+              </li>
             </ul>
           </div>
 
@@ -95,11 +95,11 @@ function Footer() {
                 </ul>
               </div>
               <div className="email">
-                <img src="./assets/gmail.png" alt="logo" />
+                <img src="./assets/gmail2.png" alt="logo" />
                 <p>jamshion.india@gmail.com</p>
               </div>
               <div className="city" style={{ marginTop: "10px" }}>
-                <img src="./assets/placeholder.png" alt="logo" />
+                <img src="./assets/placeholder2.png" alt="logo" />
                 <p>Delhi, India</p>
               </div>
             </div>
@@ -107,11 +107,11 @@ function Footer() {
         </div>
 
         <div className="subfooter-container">
-          <img src="./assets/sales.png" alt="announcement" />
+          <img src="./assets/sales2.png" alt="announcement" />
           <div className="subfooter">
             <p>
-              Crafted with <img src="./assets/heart.png" alt="heart-image" /> in
-              New Delhi
+              Crafted with <img src="./assets/heart2.png" alt="heart-image" />{" "}
+              in New Delhi
             </p>
             <p style={{ fontStyle: "normal", marginTop: "10px" }}>
               ©️ 2023 | Jamshion India. All Rights Reserved.

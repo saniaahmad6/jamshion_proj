@@ -13,7 +13,7 @@ function EmailSection() {
         <div className="email-section-content middle">
           <p>
             Get early access to special offers and new products. Don't worry; we
-            don't spam. <i>Dil se promise</i> <AiTwotoneHeart style={{fontSize:"35px", color:"#6b9c73"}}/>
+            don't spam. <p><i>Dil se promise</i> <AiTwotoneHeart style={{fontSize:"35px", color:"#6b9c73"}}/></p> 
           </p>
         </div>
 

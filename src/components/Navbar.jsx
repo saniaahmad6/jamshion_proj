@@ -9,11 +9,11 @@ function Navbar() {
       <div className="top-nav">
         <div className="container top-nav-container">
           <ul className="nav-link-group">
-            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/about" style={{textDecoration:"none", color:"black"}}>About</NavLink></li>
             <li>Blog</li>
             <li>Reviews</li>
             <li>FAQs</li>
-            <li><NavLink to="/contact">Contact Us</NavLink></li>
+            <li><NavLink to="/contact" style={{textDecoration:"none", color:"black"}}>Contact Us</NavLink></li>
             <li> Jamshion Social</li>
           </ul>
 
