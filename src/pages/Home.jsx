@@ -11,7 +11,7 @@ function Home() {
       <Navbar />
       
       
-      <Main />
+      {/* <Main /> */}
       <div style={{ padding : "0 1%" }}>
       {/* <center style={{ padding : "5% 3%" }}><h2> Why E-Bikes?</h2></center> */}
       

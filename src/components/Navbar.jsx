@@ -1,7 +1,9 @@
 import React from "react";
 import "./Navbar.scss";
 import NavbarMarquee from "./NavbarMarquee";
+import { StyledEngineProvider } from '@mui/material/styles';
 import { NavLink } from "react-router-dom";
+import Sidebar from "../pages/SideBar";
 function Navbar() {
   return (
     <div className="Navbar">
@@ -62,9 +64,11 @@ function Navbar() {
           </div>
 
           <div className="middle-nav-right">
-            <NavLink to="/login">
-              <img src="./assets/before-login.png" alt="account" />
-            </NavLink>
+            <StyledEngineProvider injectFirst>
+              <Sidebar/>
+            </StyledEngineProvider>
+              
+            
             <img src="./assets/cart.png" alt="cart" />
             <img src="./assets/wishlist.png" alt="wishlist" />
           </div>
