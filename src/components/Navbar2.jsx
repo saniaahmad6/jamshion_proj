@@ -4,7 +4,7 @@ import NavbarMarquee from "./NavbarMarquee";
 import { StyledEngineProvider } from "@mui/material";
 import SideBar from "../pages/SideBar"
 import { NavLink } from "react-router-dom";
-function Navbar2() {
+function Navbar2() {  
   return (
   
     <div className="Navbar">

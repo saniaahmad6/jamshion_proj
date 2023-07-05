@@ -46,7 +46,7 @@ function Navbar() {
                   type="search"
                   id="search"
                   name="search"
-                  placeholder="What are you loking for?"
+                  placeholder="What are you looking for?"
                 />
                 <button type="submit" className="search-button">
                   <img src="./assets/search3.png" alt="search" />
