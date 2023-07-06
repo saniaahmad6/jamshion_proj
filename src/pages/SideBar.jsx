@@ -4,6 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 
 import { Form } from "react-router-dom";
+import Login from "./Login";
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -25,15 +26,10 @@ export default function TemporaryDrawer() {
     <Box
       sx={{ width:  300 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      // onClick={toggleDrawer(anchor, false)}
+      // onKeyDown={toggleDrawer(anchor, false)}
     >
-      
-    
-      
-      
-      
-    
+    <Login/>
     </Box>
   );
 
@@ -42,7 +38,7 @@ export default function TemporaryDrawer() {
       
       {["login"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <img src="./assets/before-login.png" alt="login" onClick={toggleDrawer(anchor, true)}/>
+          <Button><img src="./assets/before-login.png" alt="login" onClick={toggleDrawer(anchor, true)}/></Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
