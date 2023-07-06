@@ -3,7 +3,14 @@ import { Link } from "react-router-dom";
 import { Footer, Navbar } from "../components";
 import "./Login.css"
 import { Divider } from "@mui/material";
-const Login = () => {
+const Login = ({anchor,toggleDrawer}) => {
+  const [register, setRegister] = React.useState({
+    register: false
+  });
+  function addRegister(){
+    toggleDrawer(anchor,false);
+
+  }
   return (
     <>
       
@@ -34,10 +41,10 @@ const Login = () => {
                 />
               </div>
               <div className="my-2" >
-                <p className="Login-question">New to Jamshion? <Link to="/register" className="Login-link text-decoration-underline  ">Create account</Link> </p>
+                <p className="Login-question">New to Jamshion? <Link to="" onClick={toggleDrawer(anchor,false)} className="Login-link text-decoration-underline  ">Create account</Link> </p>
               </div>
               <div className="my-2">
-                <p className="Login-question">Forgot Password? <Link to="/register" className="Login-link text-decoration-underline ">Reset Password</Link> </p>
+                <p className="Login-question">Forgot Password? <Link to="/" className="Login-link text-decoration-underline ">Reset Password</Link> </p>
               </div>
               <div className="text-center">
                 <button class="my-2 mx-auto Login-button" type="submit" >

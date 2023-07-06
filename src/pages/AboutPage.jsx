@@ -2,7 +2,7 @@ import React from 'react'
 import { Footer } from "../components";
 import {Row,Col,Container} from "react-bootstrap"
 import Navbar2 from '../components/Navbar2';
-
+import FAQ from './Faq';
 const AboutPage = () => {
   return (
     <>
@@ -96,7 +96,7 @@ Clothing with minimal or no skin exposure is known as <strong>modest fashion</st
           </div>
         </div>
       </div>
-      <Container>
+      {/* <Container>
       <h2 className="text-center py-4">Easy Service</h2>
         <img
             className="card-img img-fluid"
@@ -105,7 +105,9 @@ Clothing with minimal or no skin exposure is known as <strong>modest fashion</st
             height={400}
             
           />
-        </Container>
+      </Container> */}
+      <div id="faqs"><FAQ /></div>
+      
       <Footer />
     </>
   )

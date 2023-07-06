@@ -29,7 +29,7 @@ export default function TemporaryDrawer() {
       // onClick={toggleDrawer(anchor, false)}
       // onKeyDown={toggleDrawer(anchor, false)}
     >
-    <Login/>
+    <Login anchor={anchor} toggleDrawer={toggleDrawer} />
     </Box>
   );
 

@@ -4,6 +4,7 @@ import NavbarMarquee from "./NavbarMarquee";
 import { StyledEngineProvider } from "@mui/material";
 import SideBar from "../pages/SideBar"
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 function Navbar2() {  
   return (
   
@@ -12,11 +13,11 @@ function Navbar2() {
       <div className="top-nav">
         <div className="container top-nav-container">
           <ul className="nav-link-group">
-            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/about" style={{textDecoration:"none", color:"black"}}>About</NavLink></li>
             <li>Blog</li>
             <li>Reviews</li>
-            <li>FAQs</li>
-            <li><NavLink to="/contact">Contact Us</NavLink></li>
+            <li><HashLink to="/about#faqs" smooth style={{textDecoration:"none", color:"black"}}>FAQs</HashLink></li>
+            <li><NavLink to="/contact" style={{textDecoration:"none", color:"black"}}>Contact Us</NavLink></li>
             <li> Jamshion Social</li>
           </ul>
 
