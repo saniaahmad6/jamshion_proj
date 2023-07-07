@@ -106,7 +106,7 @@ Clothing with minimal or no skin exposure is known as <strong>modest fashion</st
             
           />
       </Container> */}
-      <div id="faqs"><FAQ /></div>
+      
       
       <Footer />
     </>

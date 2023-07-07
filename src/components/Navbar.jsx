@@ -15,7 +15,7 @@ function Navbar() {
             <li><NavLink to="/about" style={{textDecoration:"none", color:"black"}}>About</NavLink></li>
             <li>Blog</li>
             <li>Reviews</li>
-            <li><HashLink to="/about#faqs" smooth style={{textDecoration:"none", color:"black"}}>FAQs</HashLink></li>
+            <li><HashLink to="/faq" smooth style={{textDecoration:"none", color:"black"}}>FAQs</HashLink></li>
             <li><NavLink to="/contact" style={{textDecoration:"none", color:"black"}}>Contact Us</NavLink></li>
             <li> Jamshion Social</li>
           </ul>
@@ -59,7 +59,7 @@ function Navbar() {
           <div className="jamshion-logo">
             <NavLink to="/"><img src="./assets/jamshion-logo.png" alt="logo" /></NavLink>
             <div className="jamshion-logo-text">
-              <h1>JAMSHION</h1>
+            <NavLink to="/" style={{textDecoration :"none"}}><h1>JAMSHION</h1></NavLink>
               <p>unlock the elegance within</p>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Footer, Navbar } from "../components";
 import "./Login.css"
 import { Divider } from "@mui/material";
-// import { useEffect } from "react";
+
 const Login = ({anchor,toggleDrawer}) => {
   const [login, setLogin] = React.useState(true);
   function handleClick (){
@@ -73,7 +73,7 @@ const Login = ({anchor,toggleDrawer}) => {
                 <p className="Login-question" style={{textAlign : "justify" ,padding :"0 2% 0 2%"}}>Forgot Password? <Link to="/" className="Login-link text-decoration-underline ">Reset Password</Link> </p>
               </div>) : (null)}
               
-              {login===false  ? (<p className="Login-question" style={{textAlign : "justify" ,padding :"0 2% 0 2%"}}>We care deeply about you and want to ensure your safety, risk-free purchasing, and a fantastic time while shopping with us. Find out more in our privacy policy.</p>) 
+              {login===false  ? (<p className="Login-question" style={{textAlign : "justify" ,padding :"0 2% 0 2%"}}>We care deeply about you and want to ensure your safety, risk-free purchasing, and a fantastic time while shopping with us. Find out more in <a href="" style={{color:"rgb(154, 165, 162)"}}>our privacy policy.</a></p>) 
               : (null)}
               {login ? (
                 <div className="text-center">

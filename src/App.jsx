@@ -14,6 +14,7 @@ import {
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./pages/SideBar";
 import FAQ from "./pages/Faq";
+import MoreFAQ from "./pages/MoreFAQ";
 function App() {
   return (
     <Routes>
@@ -27,7 +28,7 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="*" element={<PageNotFound />} />
-      <Route path="/faq" element={<FAQ />} />
+      <Route path="/faq" element={<MoreFAQ />} />
       <Route path="/product/*" element={<PageNotFound />} />
     </Routes>
   );

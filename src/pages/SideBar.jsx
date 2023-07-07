@@ -1,10 +1,9 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
-
-import { Form } from "react-router-dom";
+import "./Sidebar.css"
 import Login from "./Login";
+
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -38,7 +37,7 @@ export default function TemporaryDrawer() {
       
       {["login"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button><img src="./assets/before-login.png" alt="login" onClick={toggleDrawer(anchor, true)}/></Button>
+          <button className="Login-person-btn"><img src="./assets/before-login.png" alt="login" onClick={toggleDrawer(anchor, true)}/></button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

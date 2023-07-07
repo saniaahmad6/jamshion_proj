@@ -16,7 +16,7 @@ function Navbar2() {
             <li><NavLink to="/about" style={{textDecoration:"none", color:"black"}}>About</NavLink></li>
             <li>Blog</li>
             <li>Reviews</li>
-            <li><HashLink to="/about#faqs" smooth style={{textDecoration:"none", color:"black"}}>FAQs</HashLink></li>
+            <li><HashLink to="/faq" smooth style={{textDecoration:"none", color:"black"}}>FAQs</HashLink></li>
             <li><NavLink to="/contact" style={{textDecoration:"none", color:"black"}}>Contact Us</NavLink></li>
             <li> Jamshion Social</li>
           </ul>
