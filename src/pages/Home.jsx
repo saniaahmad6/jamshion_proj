@@ -5,6 +5,7 @@ import TopProd from "../components/topprod";
 import EmailSection from "../components/EmailSection";
 import FAQ from "./Faq";
 import GridSection from "../components/GridSection";
+import CategorySection from "../components/CategorySection";
 function Home() {
   return (
     <>
@@ -91,10 +92,14 @@ function Home() {
         </Carousel>
       </div>
       {/* <FAQ/> */}
-      <Points />
+
+      {/* <Points /> */}
+      <CategorySection />
       <TopProd />
       <GridSection />
-      <div id="faqs"><FAQ /></div>
+      <div id="faqs">
+        <FAQ />
+      </div>
       <EmailSection />
       <Footer />
     </>
