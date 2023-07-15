@@ -1,0 +1,68 @@
+.PromotionBanner {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .promotion-banner-container {
+    display: flex;
+    align-items: center;
+    .promotion-banner-left {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: center;
+
+      .headings {
+        width: max-content;
+        text-align: center;
+        h1 {
+          font-weight: bold;
+          color: #6b9c73;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 1.8rem;
+          letter-spacing: 0.4px;
+          line-height: 1.2;
+        }
+      }
+
+      .hashtag-img {
+        img {
+          margin-top: 20px;
+          width: 300px;
+          object-fit: contain;
+        }
+      }
+
+      .icon-heading {
+        font-size: 1.4rem;
+        margin-top: 20px;
+      }
+
+      .icons-img {
+        display: flex;
+        gap: 16px;
+        margin-top: 10px;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .promotion-banner-right {
+      img {
+        width: 400px;
+        object-fit: contain;
+      }
+    }
+  }
+}

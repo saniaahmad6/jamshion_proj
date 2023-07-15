@@ -6,6 +6,7 @@ import EmailSection from "../components/EmailSection";
 import FAQ from "./Faq";
 import GridSection from "../components/GridSection";
 import CategorySection from "../components/CategorySection";
+import PromotionBanner from "../components/PromotionBanner";
 function Home() {
   return (
     <>
@@ -96,6 +97,7 @@ function Home() {
       {/* <Points /> */}
       <CategorySection />
       <TopProd />
+      <PromotionBanner />
       <GridSection />
       <div id="faqs">
         <FAQ />
