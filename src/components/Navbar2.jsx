@@ -62,7 +62,7 @@ function Navbar2() {
             <div className="jamshion-logo-text">
             <NavLink to="/" style={{textDecoration :"none"}}><h1 className="h1 center">JAMSHION</h1></NavLink>
               {/* <p>unlock the elegance within</p> */}
-              <p className="p1 center">"Islam is beautified by two qualities: modesty and tolerance for the <br/> sake of Allah and not for anyone else" <br/><p className="small"> Source: al-Tahmid li-Ibn 'Abd al-Barr 13/218</p></p>
+              {/* <p className="p1 center">"Islam is beautified by two qualities: modesty and tolerance for the <br/> sake of Allah and not for anyone else" <br/><p className="small"> Source: al-Tahmid li-Ibn 'Abd al-Barr 13/218</p></p> */}
             </div>
           </div>
 

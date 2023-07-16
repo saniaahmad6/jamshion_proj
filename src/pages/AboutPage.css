@@ -1,0 +1,31 @@
+.key-promises{
+    text-align: center;
+    color : #539165;
+    .byline{
+        color:black;
+    }
+      
+}
+.grid-promise{
+    text-align: center;
+    padding: 5%;
+}
+
+.desc{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-bottom: 2%;
+    line-height: 1.6rem;
+    .heading{
+        text-align: center;
+        color : #539165;
+    }
+}
+
+.quote {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
