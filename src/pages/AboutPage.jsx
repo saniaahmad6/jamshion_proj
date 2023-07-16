@@ -38,41 +38,7 @@ const AboutPage = () => {
         
         
 
-        {/* <h2 className="py-4">Products</h2>
-        <div className="row"> */}
-          {/* <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://www.modestforever.com/pub/media/catalog/product/cache/660135ff7ae1e337e4b3d8f2447bf0df/P/2/P235-1.jpg" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Hijabs</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://cdn.shopify.com/s/files/1/0075/9250/9551/files/7_71145fd6-bb85-4ad6-8264-1158325a7684.jpg?v=1683367407" alt="" height={100} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Abaya</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images-cdn.ubuy.co.in/633fec7f992c8d65027cbdbc-muslim-prayer-rug-and-prayer-beads-with.jpg" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Islamic Gifts</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://i.pinimg.com/originals/b8/3a/d3/b83ad3986ad446e345a060549ff713a0.jpg" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Accessories</h5>
-              </div>
-            </div>
-          </div> */}
-        {/* </div> */}
+        
       </div>
       <Container>
       <div className='desc'>
@@ -90,6 +56,23 @@ const AboutPage = () => {
             –Sana</p>
       </div>
       </Container>
+      <div className='desc'><h3 className='heading'>WHY TRUST US?</h3></div>
+      
+      <img
+            // className="card-img img-fluid"
+            src="./assets/image-gallery.png"
+            alt="Card"
+            width="100%"
+            height={600}
+        />
+
+
+
+        
+        
+
+        
+      
       <Container>
         <Row>
           <Col xs={12} md={6} lg={6} className='desc'>
