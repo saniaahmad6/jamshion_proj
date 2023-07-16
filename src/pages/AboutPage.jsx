@@ -2,6 +2,7 @@ import React from 'react'
 import { Footer } from "../components";
 import {Row,Col,Container} from "react-bootstrap"
 import Navbar2 from '../components/Navbar2';
+import { NavLink } from 'react-router-dom';
 import FAQ from './Faq';
 import './AboutPage.css'
 const AboutPage = () => {
@@ -15,7 +16,8 @@ const AboutPage = () => {
       </div>
         
       <div className='desc'>
-        <p style={{textAlign : "center"}}>Home / About</p>
+      <p style={{textAlign : "center"}}><NavLink to="/" style={{textDecoration :"none",textAlign : "center"}}>  Home /</NavLink> About</p>
+        
         <h2 style={{textAlign : "center"}}>About Us</h2>
             <p>Jamshion is an Indian modest fashion brand that celebrates the fusion of tradition and fashion,
     unlocking the elegance within individuals. We are committed to empowering individuals to express
@@ -30,6 +32,32 @@ const AboutPage = () => {
     dynamic team under the management of Ms. Sana, a Muslim women entrepreneur.
     </p>
       </div>
+
+      <Container>
+        <Row>
+          <Col xs={12} md={4} lg={4}>
+          <img
+            className="card-img img-fluid"
+            src="./assets/review-person.png"
+            alt="Card"
+            height={300}
+          />
+          </Col>
+          <Col xs={12} md={8} lg={8} className='desc' style={{padding :"5% 5% 5% 5%", lineHeight :"2rem", fontStyle : "italic"}}>
+                        " I started playing around with my wardrobe, trying different cuts, colours,
+              and styles that do not go contrary to my religious beliefs and, at the same
+              time, are modest to wear. I've been practising Hijab for a while now, and I
+              can attest that it's not repressive but rather empowering and encouraging. I
+              envisioned a way to make my bespoke line accessible to a wide audience, and
+              then Jamshion happened, where we proudly offer our customers a wide range
+              of ready-to-wear clothing options at competitive prices, giving them the
+              freedom to look stylish without compromising their core beliefs or sense of
+              self."
+              <p style={{textAlign: "right"}}>-Sana</p>
+          </Col>
+        </Row>
+        
+      </Container>
       
       
 
@@ -53,7 +81,7 @@ const AboutPage = () => {
             superior craftsmanship, ensuring that our customers feel confident and proud of their attire. Within
             months, we have fulfilled over 2,200 orders successfully, all while maintaining a perfect 5-star rating
             from our customers.
-            –Sana</p>
+            </p>
       </div>
       </Container>
       <div className='desc'><h3 className='heading'>WHY TRUST US?</h3></div>
