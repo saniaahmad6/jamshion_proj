@@ -1,10 +1,11 @@
 import React from "react";
 import "./Navbar.scss";
 import NavbarMarquee from "./NavbarMarquee";
-import { StyledEngineProvider } from '@mui/material/styles';
+import { StyledEngineProvider } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
 import Sidebar from "../pages/SideBar";
-import {HashLink} from "react-router-hash-link"
+import { HashLink } from "react-router-hash-link";
+import { AiOutlineDown } from "react-icons/ai";
 function Navbar() {
   return (
     <div className="Navbar">
@@ -12,11 +13,33 @@ function Navbar() {
       <div className="top-nav">
         <div className="container top-nav-container">
           <ul className="nav-link-group">
-            <li><NavLink to="/about" style={{textDecoration:"none", color:"black"}}>About</NavLink></li>
+            <li>
+              <NavLink
+                to="/about"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                About
+              </NavLink>
+            </li>
             <li>Blog</li>
             <li>Reviews</li>
-            <li><HashLink to="/faq" smooth style={{textDecoration:"none", color:"black"}}>FAQs</HashLink></li>
-            <li><NavLink to="/contact" style={{textDecoration:"none", color:"black"}}>Contact Us</NavLink></li>
+            <li>
+              <HashLink
+                to="/faq"
+                smooth
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                FAQs
+              </HashLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Contact Us
+              </NavLink>
+            </li>
             <li> Jamshion Social</li>
           </ul>
 
@@ -57,19 +80,25 @@ function Navbar() {
           </div>
 
           <div className="jamshion-logo">
-            <NavLink to="/"><img src="./assets/jamshion-logo.png" alt="logo" /></NavLink>
+            <NavLink to="/">
+              <img src="./assets/jamshion-logo2.png" alt="logo" />
+            </NavLink>
             <div className="jamshion-logo-text">
-            <NavLink to="/" style={{textDecoration :"none"}}><h1>JAMSHION</h1></NavLink>
+              <NavLink
+                to="/"
+                style={{ textDecoration: "none", letterSpacing: "3px" }}
+              >
+                <h1>JAMSHION</h1>
+              </NavLink>
               <p>unlock the elegance within</p>
             </div>
           </div>
 
           <div className="middle-nav-right">
             <StyledEngineProvider injectFirst>
-              <Sidebar/>
+              <Sidebar />
             </StyledEngineProvider>
-              
-            
+
             <img src="./assets/cart.png" alt="cart" />
             <img src="./assets/wishlist.png" alt="wishlist" />
           </div>
@@ -79,12 +108,42 @@ function Navbar() {
       <div className="bottom-nav">
         <div className="container bottom-nav-container">
           <ul className="bottom-nav-link">
-            <li>Bestsellers</li>
-            <li>Modest Collection</li>
-            <li>Hijabs</li>
-            <li>Accessories</li>
-            <li>Islamic Gifts</li>
-            <li>Explore</li>
+            <li>
+              Bestsellers{" "}
+              <span>
+                <AiOutlineDown />
+              </span>
+            </li>
+            <li>
+              Modest Collection{" "}
+              <span>
+                <AiOutlineDown />
+              </span>
+            </li>
+            <li>
+              Hijabs{" "}
+              <span>
+                <AiOutlineDown />
+              </span>
+            </li>
+            <li>
+              Accessories{" "}
+              <span>
+                <AiOutlineDown />
+              </span>
+            </li>
+            <li>
+              Islamic Gifts{" "}
+              <span>
+                <AiOutlineDown />
+              </span>
+            </li>
+            <li>
+              Explore{" "}
+              <span>
+                <AiOutlineDown />
+              </span>
+            </li>
           </ul>
         </div>
       </div>
