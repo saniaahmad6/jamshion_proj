@@ -1,0 +1,81 @@
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: #6b9c73;
+  background: #6b9c73; /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .3s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.imagedesc{
+    background-color: whitesmoke;
+    color: black;
+    padding: 2%;
+    
+
+}
+
+.price{
+    color: grey;
+    padding:  0 2% 2%;
+}
+
+.greenblock{
+    display: inline;
+    color: white;
+    background: #6b9c73;
+    padding: 1%;
+    margin-left: 70%;
+    font-size: 1.2rem;
+    
+}
+
+.greentext{
+    
+    color: white;
+    background: #6b9c73;
+    
+    font-size: 1.2rem;
+    width:100%;
+    .btn{
+        display: inline;
+        border-right: 1px solid #f1f1f1;
+        padding: 3%;
+    }  
+    .text{
+        display: inline;
+        text-align: center;
+        padding: 3%;
+    } 
+}
+
+
