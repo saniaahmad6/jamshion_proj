@@ -8,17 +8,20 @@
   .marq-container {
     overflow: hidden;
     display: flex;
+    justify-content: space-between;
 
     .marq-content {
       display: flex;
       align-items: center;
+      padding-block: 2px;
       
       justify-content: space-between;
   
 
       p{
-        min-width: 360px;
         margin: 0;
+        width: 1200px;
+        font-weight: bold;
       }
     }
   }

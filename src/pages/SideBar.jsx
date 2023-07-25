@@ -37,7 +37,7 @@ export default function TemporaryDrawer() {
       
       {["login"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <button className="Login-person-btn"><img src="./assets/before-login.png" alt="login" onClick={toggleDrawer(anchor, true)}/></button>
+          <button className="Login-person-btn" style={{padding:"0", border:"none", background:"none"}}><img src="./assets/before-login.png" alt="login" onClick={toggleDrawer(anchor, true)}/></button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

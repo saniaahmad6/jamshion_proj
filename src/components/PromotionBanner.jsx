@@ -9,7 +9,7 @@ function PromotionBanner() {
           <div className="headings">
             <h1>LET THE WORLD HEAR YOU LOUD</h1>
             <p>Take the challenge to grow the library of modest</p>
-            <p style={{ textAlign: "end" }}>fashion on internet</p>
+            <p style={{ textAlign: "center" }}>fashion on internet</p>
           </div>
 
           <div className="hashtag-img">
